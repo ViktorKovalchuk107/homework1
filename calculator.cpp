@@ -13,3 +13,8 @@ int Calculator::Sub (double a, double b)
 {
     return Add (a, -b);
 }
+
+int Calculator::Mult (double a, double b)
+{
+    return a * b;
+}

@@ -1,0 +1,41 @@
+From 7e27e76a823ffa4bcaf8de29c40367d915a96b88 Mon Sep 17 00:00:00 2001
+From: Viktor Kovalchuk <vitia107@gmail.com>
+Date: Sun, 31 Mar 2019 01:39:59 +0200
+Subject: [PATCH] add a multiplication operation
+
+Now you can use multiplication)
+
+Signed-off-by: Viktor Kovalchuk <vitia107@gmail.com>
+---
+ calculator.cpp | 5 +++++
+ calculator.h   | 1 +
+ 2 files changed, 6 insertions(+)
+
+diff --git a/calculator.cpp b/calculator.cpp
+index 8482c70..284d7b6 100644
+--- a/calculator.cpp
++++ b/calculator.cpp
+@@ -13,3 +13,8 @@ int Calculator::Sub (double a, double b)
+ {
+     return Add (a, -b);
+ }
++
++int Calculator::Mult (double a, double b)
++{
++    return a * b;
++}
+diff --git a/calculator.h b/calculator.h
+index 3740907..a525171 100644
+--- a/calculator.h
++++ b/calculator.h
+@@ -6,6 +6,7 @@ class Calculator
+     public:
+         int Add (double, double);
+         int Sub (double, double);
++        int Mult (double , double);
+ };
+ 
+ #endif//CALCULATOR_H
+-- 
+2.15.2 (Apple Git-101.1)
+
